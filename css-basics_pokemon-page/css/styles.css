@@ -4,6 +4,9 @@
 
 /* Task 1: First of all we want to adjust how the size of our elements is calculated when working with CSS. Do you know how to switch from "content-box" to "border-box"? */
 
+*{
+  box-sizing: border-box;
+}
 /* your solution */
 
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements of your code via inheritance. Which selector do we need for this? */
@@ -78,7 +81,7 @@ section {
   display:unset;
   /* your solution */
 }
-.favourites.subtitle{
+.favourites .subtitle{
   border-color: orange;
 }
 
@@ -87,13 +90,13 @@ section {
 /* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
 
 /* add selector */
- {
+ ul{
   list-style: "🧡";
   padding-left: 10px; /* add value */ ;
 }
 
 /* add selector */
- {
+ li{
   padding-left: 10px; /* add value */ ;
 }
 
