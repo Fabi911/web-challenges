@@ -9,7 +9,7 @@
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements of your code via inheritance. Which selector do we need for this? */
 
 /* add selector */
- {
+ body{
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -19,6 +19,10 @@
 /* ------- Headings Part 1 ------- */
 
 /* Task 3: To set the line height to 1.5 is good for texts, because of accessibility concerns, but for the headings it seems too much. Let's change this by giving our headings a line height of 1.2: */
+
+h1 ,h2 {
+  line-height: 1.2;
+}
 
 /* your solution */
 
@@ -31,6 +35,10 @@
 */
 
 .title {
+  background-color: white;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
   /* your solution */
 }
 
@@ -45,6 +53,10 @@
 */
 
 section {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: 5px solid orange;
   /* your solution */
 }
 
@@ -59,7 +71,15 @@ section {
 */
 
 .subtitle {
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding-left: 10px;
+  padding-right: 0px;
+  display:unset;
   /* your solution */
+}
+.favorites.subtitle{
+  border-color: orange;
 }
 
 /* ------- List ------- */
@@ -69,12 +89,12 @@ section {
 /* add selector */
  {
   list-style: "🧡";
-  padding-left: /* add value */ ;
+  padding-left: 10px; /* add value */ ;
 }
 
 /* add selector */
  {
-  padding-left: /* add value */ ;
+  padding-left: 10px; /* add value */ ;
 }
 
 /* ------- The End -------- */
