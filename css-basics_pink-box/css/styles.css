@@ -13,7 +13,10 @@ div {
   font-family: cursive;
   padding: 8px;
   height: 150px;
-  widht: 15
+  width: 150px;
+  background-color: hotpink;
+  color: white;
+  border-radius: 8px;
   /* set the height and the width of the box to 150px */
 
   /* make the background color "hotpink" */
