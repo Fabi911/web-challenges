@@ -22,6 +22,9 @@ body {
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header__text {
@@ -41,6 +44,8 @@ body {
   background: #140523;
   color: #ffffff;
   height: 48px;
+  position: sticky;
+  bottom: 0; 
 }
 
 /**
@@ -53,6 +58,7 @@ body {
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+  position: relative;
 }
 
 .card__heading {
@@ -68,6 +74,9 @@ body {
   padding: 6px 12px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 /**
@@ -87,4 +96,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.footer__text{
+  margin-left: 60px;
 }
