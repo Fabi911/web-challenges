@@ -13,11 +13,13 @@ let pizzaSize2 = 24;
 
 pizzaInput1.addEventListener("input", () => {
   pizzaSize1 = pizzaInput1.value;
+  pizzaSize2 = pizzaInput2.value;
   calculatePizzaGain(pizzaSize1,pizzaSize2);
 });
 
 pizzaInput2.addEventListener("input", () => {
   pizzaSize2 = pizzaInput2.value;
+  pizzaSize1 = pizzaInput1.value;
   calculatePizzaGain(pizzaSize1,pizzaSize2);
 })
 // Task 1
