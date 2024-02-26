@@ -13,6 +13,7 @@ export default function App() {
   }
   return (
     <div className="container">
+      <h2>only tree emojis: {code}</h2>
       <div className="button-container">
         <button
           type="button"
