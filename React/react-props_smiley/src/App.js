@@ -7,5 +7,5 @@ export default function App() {
 
 function Smiley({isHappy}){
   
-  return <h1>{isHappy ? ":-)" : ":-("}</h1>;     
+  return <h1 styles=background:blue>{isHappy ? ":-)" : ":-("}</h1>;     
 }
