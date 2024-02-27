@@ -25,7 +25,7 @@ export default function App() {
     {
       id: 1341,
       name:'🍉 watermelon',
-      color:'green and red',
+      color:'green',
     },
   ];
 
