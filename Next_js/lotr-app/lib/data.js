@@ -16,6 +16,7 @@ export const volumes = [
       },
     ],
     color: "#242C31",
+    image: "/images/the-fellowship-of-the-ring.png",
   },
   {
     slug: "the-two-towers",
@@ -34,6 +35,7 @@ export const volumes = [
       },
     ],
     color: "#532724",
+    image: "/images/the-two-towers.png",
   },
   {
     slug: "the-return-of-the-king",
@@ -52,6 +54,7 @@ export const volumes = [
       },
     ],
     color: "#202C2C",
+    image: "/images/the-return-of-the-king.png",
   },
 ];
 
