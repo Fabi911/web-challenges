@@ -30,6 +30,14 @@ export default function Product() {
       mutate();
     }
   }
+  async function handleDeleteProduct(id) {
+    const response = await fetch(`/api/products/${id}`, {
+      method: "DELETE",
+    });
+    if (response.ok) {
+      router.push("/");
+    }
+  }
 
   if (isLoading) {
     return <h1>Loading...</h1>;
@@ -49,6 +57,9 @@ export default function Product() {
       {data.reviews.length > 0 && <Comments reviews={data.reviews} />}
       {isEditMode && <ProductForm onSubmit={handleEditProduct} />}
       <StyledLink href="/">Back to all</StyledLink>
+      <button type="button" onClick={() => handleDeleteProduct(id)}>
+        delete
+      </button>
       <button
         onClick={() => {
           setIsEditMode(!isEditMode);
